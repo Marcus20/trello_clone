@@ -3,6 +3,7 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import { ShowListInputAction } from '../src/actions/index';
 import { addListItem } from './reducers/index';
+
 export interface IStoreState {
   showListInput: boolean;
 }
