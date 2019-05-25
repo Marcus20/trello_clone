@@ -1,0 +1,20 @@
+.addListItem {
+  padding: 20px 0px 0px 20px;
+}
+
+.addListItem button {
+  background-color: black;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.addListItem button:hover {
+  cursor: pointer;
+}
+
+.addListItem button span {
+  font-size: 16px;
+  padding-right: 100px;
+}
