@@ -1,5 +1,12 @@
 .header {
-  background-color: yellow;
-  padding: 10px;
+  background-color: #0584ff;
+  padding: 5px;
+}
+
+.header span {
+  font-weight: bolder;
+  color: #fff;
+  letter-spacing: -1px;
+  font-size: 30px;
 }
 

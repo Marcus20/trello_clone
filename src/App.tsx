@@ -6,7 +6,7 @@ class App extends React.Component {
   public render() {
     return (
       <div className="App">
-        <Header logoText="Shmello" />
+        <Header logoText="😎" />
         <AddList buttonText="Add a list" />
       </div>
     );
