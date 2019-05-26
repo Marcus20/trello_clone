@@ -1,5 +1,7 @@
 import * as React from 'react';
 import * as actions from '../../actions/index';
+import { IStoreState } from '../../Root';
+import EnterListItem from '../EnterListItem/EnterListItem';
 import './AddList.css';
 
 import { connect } from 'react-redux';
@@ -8,6 +10,7 @@ import { Dispatch } from 'redux';
 export interface IAddListProps {
   buttonText: string;
   addListItem?: () => void;
+  showListInput?: boolean;
 }
 
 class AddList extends React.Component<IAddListProps> {
@@ -15,11 +18,22 @@ class AddList extends React.Component<IAddListProps> {
   public render() {
     return (
       <div className="addListItem">
-        <button onClick={this.props.addListItem}>
-          <span>+ {this.props.buttonText}</span>
-        </button>
+        {!this.props.showListInput ? (
+          <button onClick={this.props.addListItem}>
+            <span>+ {this.props.buttonText}</span>
+          </button>
+        ) : (
+            <EnterListItem />
+          )
+        }
       </div>
     )
+  }
+}
+
+export function mapStateToProps({ showListInput }: IStoreState) {
+  return {
+    showListInput
   }
 }
 
@@ -29,5 +43,5 @@ export function mapDispatchToProps(dispatch: Dispatch<actions.IAddListItemAction
   }
 }
 
-export default connect(null, mapDispatchToProps)(AddList);
+export default connect(mapStateToProps, mapDispatchToProps)(AddList);
 

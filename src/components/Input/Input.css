@@ -1,0 +1,12 @@
+.inputContainer {
+  margin: 3px;
+  
+}
+
+input {
+  padding: 10px;
+  border: 2px solid blue;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
