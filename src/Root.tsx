@@ -5,7 +5,7 @@ import { ShowListInputAction } from '../src/actions/index';
 import { addListItem } from './reducers/index';
 
 export interface IStoreState {
-  showListInput: boolean;
+  showListInput: boolean | undefined;
 }
 
 // tslint:disable-next-line:no-string-literal
