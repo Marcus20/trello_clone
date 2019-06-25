@@ -1,5 +1,6 @@
 import * as React from 'react';
 import * as actions from '../../actions/index';
+import { IAddListItemAction } from '../../actions/index'
 import { IStoreState } from '../../Root';
 import EnterListItem from '../EnterListItem/EnterListItem';
 import './AddList.css';
@@ -9,7 +10,7 @@ import { Dispatch } from 'redux';
 
 export interface IAddListProps {
   buttonText: string;
-  addListItem?: () => void;
+  addListItem: (e: any) => IAddListItemAction;
   showListInput?: boolean;
 }
 
@@ -39,7 +40,7 @@ export function mapStateToProps({ showListInput }: IStoreState) {
 
 export function mapDispatchToProps(dispatch: Dispatch<actions.IAddListItemAction>) {
   return {
-    addListItem: () => dispatch(actions.addListItem())
+    addListItem: () => dispatch(actions.addListItem(true))
   }
 }
 

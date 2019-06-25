@@ -5,10 +5,9 @@ import { IStoreState } from '../Root';
 export function addListItem(state: IStoreState, action: ShowListInputAction): IStoreState {
   switch (action.type) {
     case ADD_LIST_ITEM:
-      return { ...state, showListInput: true };
+      return { ...state, showListInput: action.payload };
     case HIDE_LIST_ITEM:
-      return { ...state, showListInput: false };
+      return { ...state, showListInput: action.payload };
   }
-
   return state
 }
