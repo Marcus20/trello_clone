@@ -3,19 +3,16 @@ import Button from '../Button/Button';
 import CloseButton from '../CloseButton/CloseButton';
 import Input from '../Input/Input';
 import './EnterListItem.css';
-// import Button from '../Button/Button';
 
-
-// interface IEnterListItemProps {
-
-// }
-
-// interface IEnterListItemState {
-
-// }
+/**
+ * Todo: fill out this component after you
+ * have routing situated.
+ * 
+ */
+// interface IEnterListItemProps {}
+// interface IEnterListItemState {}
 
 class EnterListItem extends React.Component {
-
   public render() {
     return (
       <div className="listItemContainer">
