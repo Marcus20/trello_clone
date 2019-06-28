@@ -1,14 +1,14 @@
+import { Router } from '@reach/router';
 import * as React from 'react';
+import Home from '../src/components/Home/Home';
+import Route from './Route';
 
-import AddList from '../src/components/AddList/AddList';
-import Header from '../src/components/Header/Header';
 class App extends React.Component {
   public render() {
     return (
-      <div className="App">
-        <Header logoText="😎" />
-        <AddList buttonText="Add a list" />
-      </div>
+      <Router>
+        <Route component={Home} path="/" />
+      </Router>
     );
   }
 }

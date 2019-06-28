@@ -16,7 +16,6 @@ export type ShowListInputAction = IAddListItemAction | IHideListItemAction;
 export function addListItem(showListView: boolean | undefined): IAddListItemAction {
   return {
     type: constants.ADD_LIST_ITEM,
-    // tslint:disable-next-line:object-literal-sort-keys
     payload: showListView
   }
 }
@@ -24,7 +23,6 @@ export function addListItem(showListView: boolean | undefined): IAddListItemActi
 export function hideListItem(showListView: boolean | undefined): IHideListItemAction {
   return {
     type: constants.HIDE_LIST_ITEM,
-    // tslint:disable-next-line:object-literal-sort-keys
     payload: showListView
   }
 }
