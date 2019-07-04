@@ -1,5 +1,4 @@
 import * as React from 'react';
-import Logo from '../Logo/Logo';
 import './Header.css';
 
 export interface IHeaderProps {
@@ -9,7 +8,7 @@ export interface IHeaderProps {
 const Header: React.SFC<IHeaderProps> = ({ logoText }) => {
   return (
     <div className="header">
-      <Logo />
+      <h1>Welcome to fake Trello!</h1>
     </div>
   );
 }
