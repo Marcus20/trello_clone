@@ -2,7 +2,7 @@ import * as React from 'react';
 import './Header.css';
 
 export interface IHeaderProps {
-  logoText: string;
+  logoText?: string;
 };
 
 const Header: React.SFC<IHeaderProps> = ({ logoText }) => {
