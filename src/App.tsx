@@ -12,7 +12,7 @@ class App extends React.Component {
         <nav>
           <Link to="/">Home</Link>
           <Link to="board">Boards</Link>
-          <Link onClick={() => console.log('hi')} to="/">Add Boards</Link>
+          <Link to="/">Add Boards</Link>
         </nav>
 
         <Router>
