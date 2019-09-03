@@ -5,10 +5,9 @@
     "tslint-config-prettier"
   ],
   "rules": {
-    "jsx-no-lambda": false,
-    "no-console": false,
     "object-literal-sort-keys": false,
-    "import-sources-order": false
+    "jsx-no-lambda": false,
+    "no-console": false
   },
   "linterOptions": {
     "exclude": [
@@ -16,5 +15,8 @@
       "node_modules/**/*.ts",
       "coverage/lcov-report/*.js"
     ]
+  },
+  "jsRules": {
+    "object-literal-sort-keys": false
   }
 }

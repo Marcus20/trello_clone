@@ -3,6 +3,8 @@ import * as React from 'react';
 import Home from '../src/components/Home/Home';
 import Route from './Route';
 
+import './App.css';
+
 class App extends React.Component {
   public render() {
     return (
@@ -10,6 +12,7 @@ class App extends React.Component {
         <nav>
           <Link to="/">Home</Link>
           <Link to="board">Boards</Link>
+          <Link onClick={() => console.log('hi')} to="/">Add Boards</Link>
         </nav>
 
         <Router>

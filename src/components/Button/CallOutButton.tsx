@@ -3,8 +3,8 @@ import './CallOutButton.css';
 
 interface IButtonProps {
   color: string;
-  buttonColor: string;
   buttonText: string;
+  buttonColor: string;
 }
 
 const Button: React.SFC<IButtonProps> = (
