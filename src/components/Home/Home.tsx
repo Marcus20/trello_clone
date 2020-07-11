@@ -1,5 +1,5 @@
 import * as React from 'react';
-import AddList from '../../containers/AddList/AddList';
+import AddList from '../AddList/AddList';
 
 const Home: React.FC = () => (
   <div>

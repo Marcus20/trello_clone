@@ -1,12 +1,9 @@
 import * as React from 'react';
 
-export default class Landing extends React.Component {
-  public state = {};
-
-
-  public render() {
-    return (
-      <div>hi</div>
-    );
-  }
+const Landing: React.FC<{}> = () => {
+  return (
+    <div>Landing</div>
+  );
 }
+
+export default Landing;
