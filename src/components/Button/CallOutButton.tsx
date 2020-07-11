@@ -7,7 +7,7 @@ interface IButtonProps {
   buttonColor: string;
 }
 
-const Button: React.SFC<IButtonProps> = (
+const Button: React.FC<IButtonProps> = (
   {
     color,
     buttonText,

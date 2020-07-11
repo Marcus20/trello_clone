@@ -5,22 +5,20 @@ import Route from './Route';
 
 import './App.css';
 
-class App extends React.Component {
-  public render() {
-    return (
-      <div>
-        <nav>
-          <Link to="/">Home</Link>
-          <Link to="board">Boards</Link>
-          <Link to="/">Add Boards</Link>
-        </nav>
+const App: React.FC<{}> = () => {
+  return (
+    <div>
+      <nav>
+        <Link to="/">Home</Link>
+        <Link to="board">Boards</Link>
+        <Link to="/">Add Boards</Link>
+      </nav>
 
-        <Router>
-          <Route component={Home} path="/" />
-        </Router>
-      </div>
-    );
-  }
+      <Router>
+        <Route component={Home} path="/" />
+      </Router>
+    </div>
+  );
 }
 
 export default App;

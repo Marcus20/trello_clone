@@ -1,11 +1,7 @@
 import * as React from 'react';
 import './Header.css';
 
-export interface IHeaderProps {
-  logoText?: string;
-};
-
-const Header: React.SFC<IHeaderProps> = ({ logoText }) => {
+const Header: React.FC<{}> = () => {
   return (
     <div className="header">
       <h1>Welcome to fake Trello!</h1>

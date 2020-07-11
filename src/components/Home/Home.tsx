@@ -1,8 +1,11 @@
 import * as React from 'react';
+import AddList from '../../containers/AddList/AddList';
 
-const Home: React.SFC = () => (
+const Home: React.FC = () => (
   <div>
-    <h1>Welcome to fake Trello!</h1>
+    <AddList
+      buttonText="Create board"
+    />
   </div>
 );
 
