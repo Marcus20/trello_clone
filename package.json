@@ -8,7 +8,7 @@
     "@types/reach__router": "^1.2.4",
     "@types/react-redux": "^7.0.9",
     "@types/redux-mock-store": "^1.0.1",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-redux": "^7.0.3",
